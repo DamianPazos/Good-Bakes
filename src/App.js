@@ -1,5 +1,5 @@
-import './App.css';
-import NavegationBar from './components/NavigationBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NavegationBar from './components/NavegationBar/NavegationBar';
 
 function App() {
   return (
