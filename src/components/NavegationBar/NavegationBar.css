@@ -1,9 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100&display=swap'); /* Fuente Poppins y Pacifico*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 .navegation-bar {
-  background-color: #FFD1DC; 
-  color: #D87093; 
+  background-color: #F7BECF; 
+  color: #A46E7E; 
   padding: 10px; 
   display: flex; 
   justify-content: space-between; 
@@ -28,8 +29,8 @@
 
 .navegation-item a {
   text-decoration: none; 
-  color: #D87093; 
-  font-family: Poppins;
+  color: #A46E7E; 
+  font-family: Roboto;
   font-weight: bold;
 }
 
@@ -38,3 +39,7 @@
     transition: color 1s;
 }
 
+.navegation-logo {
+  width: 100px;
+  height: 100px;
+}
