@@ -20,10 +20,10 @@ const Footer = () => {
                         <div className="footer-social">
                             <h3>Seguime</h3>
                             <ul>
-                                <li><a href="https://www.facebook.com/GoodBakesPasteleria" target="_blank"><img src={facebookImage} alt="F"/></a></li>
-                                <li><a href="https://www.instagram.com/good.bakes____/" target="_blank"><img src={instagramImage} alt="F"/></a></li>
-                                <li><a href="https://www.tiktok.com/@daniiozzia" target="_blank"><img src={tikTokImage} alt="F"/></a></li>
-                                <li><a href="https://api.whatsapp.com/send?phone=5491166939734&text=Hola!%20Quiero%20encargarte%20..." target="_blank"><img src={whatsappImage} alt="F"/></a></li>
+                                <li><a href="https://www.facebook.com/GoodBakesPasteleria" target="_blank" rel="noreferrer"><img src={facebookImage} alt="F"/></a></li>
+                                <li><a href="https://www.instagram.com/good.bakes____/" target="_blank" rel="noreferrer"><img src={instagramImage} alt="F"/></a></li>
+                                <li><a href="https://www.tiktok.com/@daniiozzia" target="_blank" rel="noreferrer"><img src={tikTokImage} alt="F"/></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=5491166939734&text=Hola!%20Quiero%20encargarte%20..." target="_blank" rel="noreferrer"><img src={whatsappImage} alt="F"/></a></li>
                             </ul>
                         </div>
                         <div className="footer-info">
