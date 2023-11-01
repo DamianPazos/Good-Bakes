@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavegationBar from './components/NavegationBar/NavegationBar';
 import Footer from './components/Footer/Footer';
 import WorkingPage from './components/WorkingPage/WorkingPage';
