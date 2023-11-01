@@ -28,7 +28,7 @@ const Footer = () => {
                         </div>
                         <div className="footer-info">
                             <h3>Contacto</h3>
-                            <p>idanielaiozzia.gb@gmail.com</p>
+                            <p>danielaiozzia.gb@gmail.com</p>
                             <p>+54-011-6693-9734</p>
                             <p>Ranelagh, Argentina</p>
                         </div>

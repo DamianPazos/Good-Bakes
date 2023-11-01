@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 .navegation-bar {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F7BECF; 
+  color: #A46E7E; 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.navegation-bar-fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +22,7 @@
   color: #A46E7E; 
   padding: 10px; 
   display: flex; 
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .logo {
