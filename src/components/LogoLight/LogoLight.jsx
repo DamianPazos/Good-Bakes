@@ -1,15 +1,15 @@
 import React from 'react';
-import "./LogoLight.css";
 import logo from '../../images/logo.jpg';
+import { LogoContainer } from './LogoLight.elements';
 
 const LogoLight = () => {
-
     return (
-        <div className="logo">
-            <img src={logo} alt="logo" /> 
-        </div>
+        <>
+            <LogoContainer>
+                <img src={logo} alt="logo"/>
+            </LogoContainer>
+        </>
     );
-
 }
 
 export default LogoLight;

@@ -1,19 +1,18 @@
 import LogoDark from "../LogoDark/LogoDark";
-import "./Footer.css";
 import facebookImage from '../../images/facebook.png';
 import instagramImage from '../../images/instagram.png';
 import tikTokImage from '../../images/tik-tok.png';
 import whatsappImage from '../../images/whatsapp.png';
+import { FooterContainer, FooterContent, FooterWrap } from "./Footer.elements";
 
 
 
 const Footer = () => {
 
     return (
-        <div className="footer">
-            <footer>
-                <div className="container">
-                    <div className="footer-content">
+<FooterContainer>
+    <FooterWrap>
+        <FooterContent>
                         <div className="footer-logo">
                             <LogoDark/>
                         </div>
@@ -32,13 +31,12 @@ const Footer = () => {
                             <p>+54-011-6693-9734</p>
                             <p>Ranelagh, Argentina</p>
                         </div>
-                    </div>
+        </FooterContent>
                     <div className="footer-copyright">
                         <p>&copy; 2023 Good Bakes. Todos los derechos reservados.</p>
                     </div>
-                </div>
-            </footer>
-        </div>
+    </FooterWrap>
+</FooterContainer>
     );
 
 };

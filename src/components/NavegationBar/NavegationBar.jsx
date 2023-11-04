@@ -1,23 +1,59 @@
-import React from "react";
-import "./NavegationBar.css";
+import React, { useState } from "react";
+import {
+  NavegationBarIconLogo, 
+  NavegationBarContainer, 
+  NavegationBarWrapper, 
+  NavegationBarMenu, 
+  NavegationBarMenuItem, 
+  NavegationBarMenuItemLink, 
+  NavegationBarIconHamburger} from "./NavegationBar.elements";
 import LogoLight from "../LogoLight/LogoLight";
+import HamburgerButton from "../HamburgerButton/HamurgerButton";
 
 const NavegationBar = () => {
 
+  const [click, setClick] = useState(false);
 
-    return (
-      <nav className="navegation-bar">
-        <div className="navegation-logo">
-        <LogoLight />
-        </div>
-        <ul className="navegation-items">
-          <li className="navegation-item"><a href="#inicio">Inicio</a></li>
-          <li className="navegation-item"><a href="#productos">Productos</a></li>
-          <li className="navegation-item"><a href="#contacto">Contacto</a></li>
-          <li className="navegation-item"><a href="#acerca">Acerca de</a></li>
-        </ul>
-      </nav>
-    );
-  };
+  const changeClick = () => {
+    setClick(!click);
+  }
+
+  return (
+    <>
+      <NavegationBarContainer>
+        <NavegationBarWrapper>
+          <NavegationBarIconLogo>
+            <LogoLight/>
+          </NavegationBarIconLogo>
+          <NavegationBarIconHamburger onClick={() => changeClick()}>
+            <HamburgerButton click={click} changeClick={changeClick}/>
+          </NavegationBarIconHamburger>
+          <NavegationBarMenu click = {click}>
+            <NavegationBarMenuItem>
+              <NavegationBarMenuItemLink onClick={() => changeClick()}>
+                Inicio
+              </NavegationBarMenuItemLink >
+            </NavegationBarMenuItem>
+            <NavegationBarMenuItem>
+              <NavegationBarMenuItemLink onClick={() => changeClick()}>
+                Productos
+              </NavegationBarMenuItemLink>
+            </NavegationBarMenuItem>
+            <NavegationBarMenuItem>
+              <NavegationBarMenuItemLink onClick={() => changeClick()}>
+                Contacto
+              </NavegationBarMenuItemLink>
+            </NavegationBarMenuItem>
+            <NavegationBarMenuItem>
+              <NavegationBarMenuItemLink onClick={() => changeClick()}>
+                Acerca de
+              </NavegationBarMenuItemLink>
+            </NavegationBarMenuItem>
+          </NavegationBarMenu>
+        </NavegationBarWrapper>
+      </NavegationBarContainer>
+    </>
+  );
+};
 
 export default NavegationBar;
