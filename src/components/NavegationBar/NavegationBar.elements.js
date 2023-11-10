@@ -35,7 +35,7 @@ export const NavegationBarMenu = styled.ul `
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 600px) {
         width: 100%;
         height: 60vh;
         position: absolute;
@@ -43,7 +43,7 @@ export const NavegationBarMenu = styled.ul `
         left: ${({click}) => click ? 0 : "-100%"};
         flex-direction: column;
         transition: 0.5s all ease-in;
-        background-color: #F7BECF;
+        background: linear-gradient(to bottom, #F7BECF, #ee7ea2);
     }
 `;
 
@@ -57,16 +57,17 @@ export const NavegationBarMenuItem = styled.li `
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 600px) {
         height: 70px;
     }
 `;
 
 export const NavegationBarMenuItemLink = styled.a `
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000000;
+
     &:hover {
-        color: #A46E7E;
+        color: #450c26;
         transition: all 0.5s ease;
     }
 `;
@@ -74,7 +75,7 @@ export const NavegationBarMenuItemLink = styled.a `
 export const NavegationBarIconHamburger = styled.div `
     display: none;
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 600px) {
         display: flex;
     }
 `;

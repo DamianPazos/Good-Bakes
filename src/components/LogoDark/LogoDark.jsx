@@ -1,13 +1,15 @@
 import React from 'react';
-import "./LogoDark.css";
 import logo from '../../images/logo-oscuro.jpg';
+import { LogoContainer } from './LogoDark.elements';
 
 const LogoDark = () => {
 
     return (
-        <div className="logo">
+        <>
+        <LogoContainer>
             <img src={logo} alt="logo" /> 
-        </div>
+        </LogoContainer>
+        </>
     );
 
 }
